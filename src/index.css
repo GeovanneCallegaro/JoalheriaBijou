@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 :root {
   --primary-color: #5D7989; 
   --second-color: #847548;

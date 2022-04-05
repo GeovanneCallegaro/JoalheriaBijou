@@ -1,10 +1,9 @@
+import { SubHeader } from "./components/SubHeader";
 
 
 function App() {
   return (
-    <div>
-      <h1>OI</h1>
-    </div>
+    <SubHeader />
   );
 }
 

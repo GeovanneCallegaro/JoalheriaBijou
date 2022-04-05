@@ -1,0 +1,77 @@
+header {
+    min-width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+
+    background-color: #fff;
+}
+
+/*Logo container*/
+
+.logoHeaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoHeaderContainer p {
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    color: #7a7676;
+}
+
+/*Menu Container*/
+
+.menuContainer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+.menuContainer ul li {
+    padding: 25px;
+
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    transition: all ease 0.2s;
+}
+
+/*Login Section*/
+.loginSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userIcon {
+    margin-right: 10px;
+    font-size: 2.3rem;
+    color: #7a7676;
+}
+
+.loginSection p {
+    font-size: 1.5rem;
+    color: #7a7676;
+    font-family: var(--second-font);
+
+    margin-right: 15px;
+}
+
+.cartIcon {
+    font-size: 1.8rem;
+    color: #7a7676;
+    
+}
+
+/*Hover and Effects*/
+.menuContainer ul li:hover {
+    cursor: pointer;
+    color: #5c5a5ade;
+}

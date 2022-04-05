@@ -1,6 +1,5 @@
 import './styles.css'
 import {BsCartCheck} from 'react-icons/bs'
-import {BiUserCircle} from 'react-icons/bi'
 import {FaUserCircle} from 'react-icons/fa'
 
 

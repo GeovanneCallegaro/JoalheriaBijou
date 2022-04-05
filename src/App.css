@@ -1,0 +1,21 @@
+.button-chat {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+
+    top: 90vh;
+    left: 92vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--primary-color);
+
+    z-index: 999;
+}
+
+.button-chat .iconMessage {
+    font-size: 2.5rem;
+    color: #fff;
+}

@@ -1,0 +1,56 @@
+footer {
+    max-height: 300px;
+    height: 200px;
+
+    background-color: var(--primary-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.socialInformation .socialIcon a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.2rem;
+    padding: 10px;
+}
+
+.socialInformation a {
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.textFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.textFooter > p {
+    text-align: center;
+}
+
+.textFooter p {
+    font-family: var(--second-font);
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.textFooter p a {
+    text-decoration: none;
+    color: #fff;
+}

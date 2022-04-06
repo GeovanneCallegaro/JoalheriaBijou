@@ -6,6 +6,7 @@ import './App.css'
 
 import {SiGooglemessages} from 'react-icons/si'
 import { FooterInformation } from "./components/FooterInformation";
+import { Footer } from "./components/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <FooterInformation 
         navText={['Início', 'Coleção', 'Loja', 'Sobre', 'Contato', 'FAQ', 'Envio e Devoluções', 'Metódos de Pagamento']}
       />
+      <Footer />
 
       <div className="button-chat">
         <SiGooglemessages className="iconMessage"/>

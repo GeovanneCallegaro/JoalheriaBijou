@@ -1,5 +1,6 @@
 import { Header } from "./components/Header";
 import { SubHeader } from "./components/SubHeader";
+import { Initial } from "./components/Initial";
 
 import './App.css'
 
@@ -13,7 +14,9 @@ function App() {
       <Header 
         navText={['Início', 'Coleção', 'Loja', 'Sobre', 'Contato']}
       />
-      
+      <Initial />
+
+
       <div className="button-chat">
         <SiGooglemessages className="iconMessage"/>
       </div>

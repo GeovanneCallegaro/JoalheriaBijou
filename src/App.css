@@ -1,10 +1,10 @@
 .button-chat {
-    position: absolute;
+    position: fixed;
     width: 60px;
     height: 60px;
 
     top: 90vh;
-    left: 92vw;
+    left: 93vw;
 
     display: flex;
     align-items: center;

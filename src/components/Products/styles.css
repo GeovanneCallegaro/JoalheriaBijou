@@ -1,0 +1,71 @@
+.containerProducts {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.sliderContainerProducts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: inherit;
+}
+
+.imageContainer {
+    padding: 15px;
+}
+
+.imageContainer img {
+    width: 220px;
+    height: 210px;
+    margin-bottom: 10px;
+    transition: all ease-out 0.4s;
+}
+
+
+.textImageContainer h3, .textImageContainer p {
+    font-size: 1.3rem;
+    font-family: var(--second-font);
+    text-indent: 1rem;
+    font-weight: 300;
+}
+
+.textImageContainer p {
+    margin-top: 2px;
+    color: rgb(139, 139, 139);
+}
+
+.visualization, .visualization-two, .visualization-three, .visualization-four {
+    position: absolute;
+    z-index: 999;
+    margin-top: 170px;
+
+    width: 220px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.808);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+
+    
+}
+
+.visualization p, .visualization-two p, .visualization-three p, .visualization-four p {
+    font-family: var(--second-font);
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.show {
+    display: flex;
+}
+
+/*HOVER AND EFFECTS*/
+.imageContainer img:hover {
+    cursor: pointer;
+    
+}

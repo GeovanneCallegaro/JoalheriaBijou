@@ -7,8 +7,8 @@ interface Props {
     navText: Array<any>
 }
 
-export const Header = ({...navTetx}: Props) => {
-    const optionsMenu = navTetx.navText.map((item) => {
+export const Header = ({...navText}: Props) => {
+    const optionsMenu = navText.navText.map((item) => {
         return item
     })
 

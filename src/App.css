@@ -12,6 +12,8 @@
 
     background-color: var(--primary-color);
 
+    cursor: pointer;
+
     z-index: 999;
 }
 

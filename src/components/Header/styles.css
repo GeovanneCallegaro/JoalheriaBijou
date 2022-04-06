@@ -1,5 +1,5 @@
 header {
-    min-width: 100%;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -43,6 +43,10 @@ header {
     transition: all ease 0.2s;
 }
 
+.menuMobile {
+    display: none;
+}
+
 /*Login Section*/
 .loginSection {
     display: flex;
@@ -67,11 +71,80 @@ header {
 .cartIcon {
     font-size: 1.8rem;
     color: #7a7676;
-    
+}
+
+.menuMobileOptions {
+    display: none;
 }
 
 /*Hover and Effects*/
 .menuContainer ul li:hover {
     cursor: pointer;
     color: #5c5a5ade;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 760px) {
+    header {
+        height: 50px;
+    }
+
+    .menuMobile {
+        display: block;
+        font-size: 2rem;
+        color: #7a7676;
+    }
+
+    .menuMobile .menuIcon, .menuMobile .cartIcon {
+        margin-left: 10px;
+        margin-top: 4px;
+    }
+
+    .menuContainer, .loginSection {
+        display: none;
+    }
+
+    .menuMobileOptions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        z-index: 99999;
+
+        height: 50px;
+
+        display: none;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .loginSectionMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loginSectionMobile p {
+        font-size: 1.8rem;
+        font-family: var(--primary-font);
+        color: #000;
+    }
+
+    .menuMobileOptions ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .menuMobileOptions ul li {
+        padding: 15px;
+
+        font-family: var(--primary-font);
+        font-size: 1.5rem;
+        font-weight: 500;
+
+        transition: all ease 0.2s;
+    }
 }

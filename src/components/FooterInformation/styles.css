@@ -1,6 +1,5 @@
 .containerAllInformations {
     width: 100%;
-    max-height: 600px;
     height: 350px;
 
     display: flex;
@@ -118,4 +117,54 @@
     font-size: 1.6rem;
 
     cursor: pointer;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 760px) {
+    .containerAllInformations {
+        display: flex;
+        flex-direction: column;
+        height: 670px;
+        align-items: center;
+    }
+
+    .descriptionShop {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .descriptionShop h3 {
+        font-size: 2rem;
+    }
+
+    .informationShop {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .informationShop .titleInformation .icon {
+        margin-left: 65px;
+    }
+
+    .informationShop .titleInformation p {
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .formContact {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .formContact form input {
+        padding: 10px;
+        height: 30px;
+    }
+
+    .formContact form button {
+        padding: 10px;
+    }
 }

@@ -11,7 +11,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <SubHeader />
       <Header 
         navText={['Início', 'Coleção', 'Loja', 'Sobre', 'Contato']}

@@ -64,8 +64,49 @@
     display: flex;
 }
 
+.arrowSliderLeft, .arrowSliderRight {
+    display: none;
+}
+
 /*HOVER AND EFFECTS*/
 .imageContainer img:hover {
     cursor: pointer;
     
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1000px) {
+    .imageContainer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 960px) {
+    .imageContainer img {
+        width: 190px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 840px) {
+    .imageContainer {
+        padding: 10px;
+    }
+
+    .imageContainer img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .sliderContainerProducts {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 20px;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .containerProducts {
+        height: 600px;
+    }
 }

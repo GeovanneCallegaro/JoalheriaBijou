@@ -5,10 +5,10 @@ import './styles.css'
 
 export const Initial = () => {
     return (
-        <>
+        <div className='initialContainer'>
             <Slider />
             <SectionInformation />
             <Products />
-        </>
+        </div>
     )
 }

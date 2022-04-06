@@ -21,3 +21,10 @@
     font-size: 2.5rem;
     color: #fff;
 }
+
+/*MEDIA QUERIES*/
+@media (max-width: 840px) {
+    .button-chat {
+        left: 90vw;
+    }
+}

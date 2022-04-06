@@ -1,4 +1,5 @@
 import './styles.css'
+import {MdArrowBackIosNew, MdArrowForwardIos} from 'react-icons/md'
 
 export const Products = () => {
     
@@ -41,6 +42,10 @@ export const Products = () => {
     return (
         <div className='containerProducts'>
             <div className='sliderContainerProducts'>
+                <div className='arrowSliderLeft'>
+                    <MdArrowBackIosNew />
+                </div>
+                
                 <div className='imageContainer'>
                     <div className='visualization' id='one'>
                         <p>Visualização rápida</p>
@@ -65,7 +70,7 @@ export const Products = () => {
                     <div className='visualization' id='three'>
                         <p>Visualização rápida</p>
                     </div>
-                    <img src="https://static.wixstatic.com/media/157553_693426837c2f455693946bd5ff85e975.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_693426837c2f455693946bd5ff85e975.webp" alt="" onMouseEnter={verifyVisualizationImage3} onMouseLeave={removeVisualization}/>
+                    <img src="https://static.wixstatic.com/media/157553_693426837c2f455693946bd5ff85e975.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_693426837c2f455693946bd5ff85e975.webp" alt="" onMouseEnter={verifyVisualizationImage3} onMouseLeave={removeVisualization} />
                     <div className='textImageContainer'>
                         <h3>Eu sou um produto!</h3>
                         <p>R$19.99</p>
@@ -75,11 +80,14 @@ export const Products = () => {
                     <div className='visualization' id='four'>
                         <p>Visualização rápida</p>
                     </div>
-                    <img src="https://static.wixstatic.com/media/157553_abfd11f66c2a446595e5c09ce463b4b7.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_abfd11f66c2a446595e5c09ce463b4b7.webp" alt="" onMouseEnter={verifyVisualizationImage4} onMouseLeave={removeVisualization}/>
+                    <img src="https://static.wixstatic.com/media/157553_abfd11f66c2a446595e5c09ce463b4b7.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_abfd11f66c2a446595e5c09ce463b4b7.webp" alt="" onMouseEnter={verifyVisualizationImage4} onMouseLeave={removeVisualization} />
                     <div className='textImageContainer'>
                         <h3>Eu sou um produto!</h3>
                         <p>R$19.99</p>
                     </div>
+                </div>
+                <div className='arrowSliderRight'>
+                    <MdArrowForwardIos/>
                 </div>
             </div>
         </div>

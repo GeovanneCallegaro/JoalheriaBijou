@@ -12,6 +12,7 @@ import { SearchBar } from "./components/SearchBarMobile";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { Collection } from "./components/Collection";
 import { Shop } from "./components/Shop";
+import { About } from "./components/About";
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
       />
       <SearchBar />
       <Switch>
+        <Route path="/sobre">
+          <About/>
+        </Route>
         <Route path="/loja">
           <Shop />
         </Route>

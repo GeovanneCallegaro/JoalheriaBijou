@@ -25,6 +25,8 @@
     text-align: center;
     font-family: var(--primary-font);
     font-size: 1.4rem;
+
+    padding: 10px;
 }
 
 .textAbout .firstPAbout {

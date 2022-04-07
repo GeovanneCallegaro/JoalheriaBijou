@@ -174,3 +174,18 @@ header {
         font-size: 1.6rem;
     }
 }
+
+@media (max-width: 360px) {
+    .loginSectionMobile p {
+        font-size: 1.4rem;
+    } 
+
+    .menuMobileOptions ul li {
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+
+    .loginSectionMobile {
+        font-size: 1.6rem;
+    }
+}

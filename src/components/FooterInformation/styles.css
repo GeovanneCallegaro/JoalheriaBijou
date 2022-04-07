@@ -103,6 +103,7 @@
     height: 40px;
     border: 2px solid var(--primary-color);
     padding: 15px;
+    color: black;
 
     margin-bottom: 10px;
 }

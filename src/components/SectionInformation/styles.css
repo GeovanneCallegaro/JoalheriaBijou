@@ -7,6 +7,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    flex-wrap: wrap;
 }
 
 .containerFrete, .containerMap, .containerCard, .containerSecurity {
@@ -36,3 +38,66 @@ span {
     font-weight: 300;
 
 }
+
+/*MEDIA QUERIES */
+@media (max-width: 578px) {
+    .containerFrete h3, .containerMap h3, .containerCard h3, .containerSecurity h3 {
+        font-size: 1.4rem;
+    }
+
+    .containerFrete .icon, .containerMap .icon, .containerCard .icon, .containerSecurity .icon {
+        font-size: 4rem;
+    }
+
+    .containerFrete span, .containerMap span, .containerCard span, .containerSecurity span {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .container {
+        width: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        height: 170px;
+        margin-bottom: 50px;
+    }
+
+    .containerFrete, .containerMap, .containerCard, .containerSecurity {
+        padding: 10px;
+    }
+
+    .containerFrete h3, .containerMap h3, .containerCard h3, .containerSecurity h3 {
+        font-size: 1.6rem;
+    }
+
+    .containerFrete .icon, .containerMap .icon, .containerCard .icon, .containerSecurity .icon {
+        font-size: 4.5rem;
+    }
+
+    .containerFrete span, .containerMap span, .containerCard span, .containerSecurity span {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .containerFrete, .containerMap, .containerCard, .containerSecurity {
+        padding: 5px;
+    }
+
+    .containerFrete h3, .containerMap h3, .containerCard h3, .containerSecurity h3 {
+        font-size: 1.2rem;
+    }
+
+    .containerFrete .icon, .containerMap .icon, .containerCard .icon, .containerSecurity .icon {
+        font-size: 3.5rem;
+    }
+
+    .containerFrete span, .containerMap span, .containerCard span, .containerSecurity span {
+        font-size: 1.4rem;
+    }
+}
+

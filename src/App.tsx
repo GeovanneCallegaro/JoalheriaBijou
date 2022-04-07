@@ -7,6 +7,7 @@ import './App.css'
 import {SiGooglemessages} from 'react-icons/si'
 import { FooterInformation } from "./components/FooterInformation";
 import { Footer } from "./components/Footer";
+import { SearchBar } from "./components/SearchBarMobile";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Header 
         navText={['Início', 'Coleção', 'Loja', 'Sobre', 'Contato']}
       />
+      <SearchBar />
       <Initial />
       <FooterInformation 
         navText={['Início', 'Coleção', 'Loja', 'Sobre', 'Contato', 'FAQ', 'Envio e Devoluções', 'Metódos de Pagamento']}

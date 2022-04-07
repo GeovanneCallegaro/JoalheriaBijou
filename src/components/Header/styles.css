@@ -148,3 +148,29 @@ header {
         transition: all ease 0.2s;
     }
 }
+
+@media (max-width: 500px) {
+    .loginSectionMobile p {
+        font-size: 1.5rem;
+    }
+
+    .menuMobileOptions ul li {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .menuMobileOptions {
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .loginSectionMobile p {
+        font-size: 1.7rem;
+    } 
+
+    .menuMobileOptions ul li {
+        font-size: 1.6rem;
+    }
+}

@@ -63,6 +63,8 @@
 
     transition: all ease 0.2s;
     transform: scale(1);
+
+    color: #fff;
 }
 
 .subHeaderContainer .searchIcon {
@@ -93,4 +95,24 @@ input:focus {
     border: 0 none;
     border-bottom: 2px solid #fff;
     outline: none;
+    color: #fff;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 645px) {
+    .firstIconsSubHeader a {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 578px) {
+    .subHeaderContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .searchSubHeader {
+        display: none;
+    }
 }

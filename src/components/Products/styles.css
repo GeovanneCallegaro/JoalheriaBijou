@@ -110,3 +110,47 @@
         height: 600px;
     }
 }
+
+@media (max-width: 500px) {
+    .imageContainer {
+        padding: 5px;
+    }
+
+    .imageContainer img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .containerProducts {
+        height: 1100px;
+    }
+
+    .sliderContainerProducts {
+        width: 350px;
+    }
+}
+
+@media (max-width: 370px) {
+    .containerProducts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imageContainer {
+        padding: 0;
+    }
+
+    .imageContainer img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .sliderContainerProducts {
+        width: 250px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

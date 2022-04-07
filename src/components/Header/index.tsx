@@ -4,6 +4,7 @@ import {FaUserCircle} from 'react-icons/fa'
 import {AiOutlineMenu} from 'react-icons/ai'
 
 
+
 interface Props {
     navText: Array<any>
 }

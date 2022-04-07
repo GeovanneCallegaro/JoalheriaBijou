@@ -1,0 +1,82 @@
+.containerShop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.firstTextSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.firstTextSection h1 {
+    font-size: 2.5rem;
+    font-family: var(--primary-font);
+    margin-top: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.firstTextSection p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400px;
+    font-family: var(--primary-font);
+    max-width: 325px;
+    margin-bottom: 30px;
+}
+
+.textEnderation {
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+    padding: 10px;
+}
+
+.enderationDiv h3 {
+    font-size: 1.4rem;
+    color: #7a7a7a;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.enderationDiv p {
+    font-size: 1.4rem;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    text-align: center;
+}
+
+.revendersSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.revendersSection h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: 500;
+}
+
+.revendedorName {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 60px;
+    font-family: var(--primary-font);
+    font-weight: 600;
+}
+
+.firstPRevendedor {
+    color: #7a7a7a;
+
+}

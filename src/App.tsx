@@ -11,6 +11,7 @@ import { SearchBar } from "./components/SearchBarMobile";
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { Collection } from "./components/Collection";
+import { Shop } from "./components/Shop";
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
       />
       <SearchBar />
       <Switch>
+        <Route path="/loja">
+          <Shop />
+        </Route>
         <Route path="/colecao">
           <Collection />
         </Route>

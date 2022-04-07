@@ -13,6 +13,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { Collection } from "./components/Collection";
 import { Shop } from "./components/Shop";
 import { About } from "./components/About";
+import { Contact } from "./components/ContactUs";
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
       />
       <SearchBar />
       <Switch>
+        <Route path="/contato">
+          <Contact/>
+        </Route>
         <Route path="/sobre">
           <About/>
         </Route>

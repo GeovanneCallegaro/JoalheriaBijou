@@ -9,16 +9,27 @@ import { FooterInformation } from "./components/FooterInformation";
 import { Footer } from "./components/Footer";
 import { SearchBar } from "./components/SearchBarMobile";
 
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { Collection } from "./components/Collection";
+
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <SubHeader />
       <Header 
         navText={['Início', 'Coleção', 'Loja', 'Sobre', 'Contato']}
       />
       <SearchBar />
-      <Initial />
+      <Switch>
+        <Route path="/colecao">
+          <Collection />
+        </Route>
+        <Route path="/">
+          <Initial />
+        </Route>
+      </Switch>
       <FooterInformation 
         navText={['Início', 'Coleção', 'Loja', 'Sobre', 'Contato', 'FAQ', 'Envio e Devoluções', 'Metódos de Pagamento']}
       />
@@ -28,6 +39,7 @@ function App() {
         <SiGooglemessages className="iconMessage"/>
       </div>
     </div>
+    </Router>
   );
 }
 

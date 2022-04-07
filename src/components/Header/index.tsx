@@ -2,7 +2,7 @@ import './styles.css'
 import {BsCartCheck} from 'react-icons/bs'
 import {FaUserCircle} from 'react-icons/fa'
 import {AiOutlineMenu} from 'react-icons/ai'
-
+import {Link} from 'react-router-dom'
 
 
 interface Props {
@@ -32,9 +32,11 @@ export const Header = ({...navText}: Props) => {
             </div>
             <nav className='menuContainer'>
                 <ul>
-                    {optionsMenu.map((option, key) => {
-                        return <li key={key}>{option}</li>
-                    })}
+                    <Link to="/"><li>{optionsMenu[0]}</li></Link>
+                    <Link to="/colecao"><li>{optionsMenu[1]}</li></Link>
+                    <Link to="/loja"><li>{optionsMenu[2]}</li></Link>
+                    <Link to="/sobre"><li>{optionsMenu[3]}</li></Link>
+                    <Link to="/contato"><li>{optionsMenu[4]}</li></Link>
                 </ul>
             </nav>
 

@@ -33,12 +33,18 @@ header {
     list-style: none;
 }
 
-.menuContainer ul li {
+.menuContainer ul a {
+    text-decoration: none;
+}
+
+.menuContainer ul a li {
     padding: 25px;
 
     font-family: var(--primary-font);
     font-size: 1.5rem;
     font-weight: 600;
+    text-decoration: none;
+    color: #000;
 
     transition: all ease 0.2s;
 }
@@ -138,12 +144,14 @@ header {
         list-style: none;
     }
 
-    .menuMobileOptions ul li {
+    .menuMobileOptions ul a li {
         padding: 15px;
 
         font-family: var(--primary-font);
         font-size: 1.5rem;
         font-weight: 500;
+        text-decoration: none;
+        color: #000;
 
         transition: all ease 0.2s;
     }

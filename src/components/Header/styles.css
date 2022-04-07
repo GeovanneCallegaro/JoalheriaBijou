@@ -144,6 +144,10 @@ header {
         list-style: none;
     }
 
+    .menuMobileOptions ul a {
+        text-decoration: none;
+    }
+
     .menuMobileOptions ul a li {
         padding: 15px;
 

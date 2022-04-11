@@ -1,46 +1,93 @@
-# Getting Started with Create React App
+# Projeto Joalheria
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
-## Available Scripts
+![GitHub repo size](https://img.shields.io/github/repo-size/geovannecallegaro/projeto-joalheria?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/geovannecallegaro/projeto-joalheria?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/geovannecallegaro/projeto-joalheria?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/geovannecallegaro/projeto-joalheria?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/geovannecallegaro/projeto-joalheria?style=for-the-badge)
 
-In the project directory, you can run:
+<img src="joia.png" alt="Imagem do Projeto">
 
-### `npm start`
+> Um projeto de e-commerce para uma loja de joias, onde o cliente pode fazer compras, ver produtos e entrar em contato com o dono da loja
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">Acesse o projeto clicando <a href="https://projeto-joalheria.vercel.app/"> aqui </a></p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Ajustes e melhorias
 
-### `npm test`
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [x] Criar estrutura do site 
+- [x] Adicionar o react-router e concluir outras páginas do projeto
+- [ ] Adicionar o redux para ter contexto global 
+- [ ] Adicionar página para login de usuário 
+- [ ] Adicionar comunicação por email (report a empresa)
 
-### `npm run build`
+## 💻 Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+<!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
+* Você instalou a versão mais recente das linguagens, dependências e bibliotecas requiridas
+* Você leu o guia relacionado ao projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔧 Tecnologias usadas no projeto: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="Logo do HTML"></img>
+<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="Logo do CSS"></img>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Logo do Javascript"></img>
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="Logo do Typescript"></img>
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="Logo do React"></img>
+<img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="Logo do React Router"></img>
 
-### `npm run eject`
+## 🚀 Instalando ToDo APP
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Para instalar o projeto, siga estas etapas:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Windows:
+```
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## ☕ Usando ToDo App
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Para usar o projeto, siga estas etapas:
 
-## Learn More
+```
+Adicione uma tarefa pelo botão ou pelo enter do teclado
+Marque ela como concluída e desmarque, tente adicionar varias tarefas
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📫 Contribuindo para o projeto
+<!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
+Para contribuir com o projeto, siga estas etapas:
+
+1. Bifurque este repositório.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
+5. Crie a solicitação de pull.
+
+Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+## 🤝 Colaboradores
+
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/89392932" width="100px;" alt="Foto de Geovanne Callegaro no GitHub"/><br>
+        <sub>
+          <b>Geovanne Callegaro</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+## 📝 Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.

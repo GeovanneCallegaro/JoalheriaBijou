@@ -20,7 +20,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [x] Criar estrutura do site 
 - [x] Adicionar o react-router e concluir outras páginas do projeto
-- [ ] Adicionar o redux para ter contexto global 
+- [x] Adicionar o redux para ter contexto global 
+- [x] Adicionando, removendo e contas no carrinho 
 - [ ] Adicionar página para login de usuário 
 - [ ] Adicionar comunicação por email (report a empresa)
 
@@ -39,6 +40,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="Logo do Typescript"></img>
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="Logo do React"></img>
 <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="Logo do React Router"></img>
+<img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="Logo do Redux"></img>
 
 ## 🚀 Instalando ToDo APP
 

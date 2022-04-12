@@ -19,8 +19,9 @@ import { Shop } from "./components/pages/Shop";
 import { About } from "./components/pages/About";
 import { Contact } from "./components/pages/ContactUs";
 
-
 function App() {
+  
+
   return (
     <Router>
     <div className="App">

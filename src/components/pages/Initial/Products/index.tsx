@@ -1,6 +1,17 @@
+import { useDispatch, useSelector } from 'react-redux'
+import { toogleProduct } from '../../../../store/Products/Products.actions'
+import { selectAllProducts } from '../../../../store/Products/Products.selectors'
 import './styles.css'
 
+
+
 export const Products = () => {
+    const dispatch = useDispatch()
+    const products = useSelector(selectAllProducts)
+
+    const handleToggle = (id: number) => {
+        dispatch(toogleProduct(id))
+    }
 
     const showVisualization = (event: any) => {
         const images = document.querySelectorAll('.imagemInitial') as unknown as Array<HTMLElement>
@@ -36,16 +47,17 @@ export const Products = () => {
                         <p>Visualização rápida</p>
                     </div>
                     <img 
-                        src="https://static.wixstatic.com/media/157553_5c7bfd55032b47afbf0d5d6d21856b72.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_5c7bfd55032b47afbf0d5d6d21856b72.webp"
-                        alt="" 
+                        src={products[0].src}
+                        alt={products[0].id}
                         onMouseEnter={(event) => showVisualization(event.target)} 
                         onMouseLeave={removeVisualization} 
+                        onClick={() => handleToggle(products[0].id)}
                         className='imagemInitial'
                         data-initial
                     />
                     <div className='textImageContainer'>
-                        <h3>Eu sou um produto!</h3>
-                        <p>R$19.99</p>
+                        <h3>{products[0].name}</h3>
+                        <p>R$ {products[0].price}</p>
                     </div>
                 </div>
                 <div className='imageContainer'>

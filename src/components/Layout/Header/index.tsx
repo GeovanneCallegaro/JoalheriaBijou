@@ -8,7 +8,7 @@ import {AiOutlineMenu} from 'react-icons/ai'
 import {Link} from 'react-router-dom'
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
-import {  selectSelectedProducts } from '../../../store/Products/Products.selectors'
+import {  selectSelectedProducts, totalPriceProducts } from '../../../store/Products/Products.selectors'
 import { CartItem } from '../CartItem'
 
 
@@ -20,11 +20,16 @@ interface Props {
 export const Header = ({...navText}: Props) => {
 
     const productsSelected = useSelector(selectSelectedProducts)
+    const totalPrice = useSelector(totalPriceProducts)
 
     const [dropdown, setDropdown] = useState("")
     
     const showDropdown = () => {
         setDropdown('drop')
+    }
+
+    const removeDropdown = () => {
+        setDropdown('')
     }
 
     /* anonymous function to map props to a constant */
@@ -87,7 +92,7 @@ export const Header = ({...navText}: Props) => {
         </nav>
 
         {/* cart items */}
-        <CartItem classname={dropdown} products={productsSelected}/>
+        <CartItem classname={dropdown} products={productsSelected} removeDropdown={removeDropdown} totalPrice={totalPrice}/>
     </>
     )
 }

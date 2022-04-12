@@ -52,6 +52,14 @@
     border-bottom: 1px solid #ccc;
 }
 
+.emptyCart {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: var(--second-font);
+
+    margin-top: 50px;
+}
+
 .itemModal > p {
     font-size: 1.3rem;
     font-weight: 600;

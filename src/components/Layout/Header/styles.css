@@ -83,6 +83,10 @@ header {
     display: none;
 }
 
+.drop {
+    display: block !important;
+}
+
 /*Hover and Effects*/
 .menuContainer ul li:hover {
     cursor: pointer;

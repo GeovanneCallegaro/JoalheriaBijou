@@ -6,6 +6,11 @@ import {AiOutlineMenu} from 'react-icons/ai'
 
 /* import Link for react-router */
 import {Link} from 'react-router-dom'
+import { useState } from 'react'
+import { useSelector } from 'react-redux'
+import {  selectSelectedProducts, totalPriceProducts } from '../../../store/Products/Products.selectors'
+import { CartItem } from '../CartItem'
+
 
 /* typescript interface for props */
 interface Props {
@@ -13,6 +18,19 @@ interface Props {
 }
 
 export const Header = ({...navText}: Props) => {
+
+    const productsSelected = useSelector(selectSelectedProducts)
+    const totalPrice = useSelector(totalPriceProducts)
+
+    const [dropdown, setDropdown] = useState("")
+    
+    const showDropdown = () => {
+        setDropdown('drop')
+    }
+
+    const removeDropdown = () => {
+        setDropdown('')
+    }
 
     /* anonymous function to map props to a constant */
     const optionsMenu = navText.navText.map((item) => {
@@ -49,11 +67,11 @@ export const Header = ({...navText}: Props) => {
             <div className='loginSection'>
                 <FaUserCircle className='userIcon'/>
                 <p>Login</p>
-                <BsCartCheck className='cartIcon'/>
+                <BsCartCheck className='cartIcon' onClick={showDropdown}/>
             </div>
 
             <div className='menuMobile' >
-                <BsCartCheck className='cartIcon'/>
+                <BsCartCheck className='cartIcon' onClick={showDropdown}/>
                 <AiOutlineMenu onClick={handleMenu} className='menuIcon'/>
             </div>
         </header>
@@ -72,6 +90,9 @@ export const Header = ({...navText}: Props) => {
             <Link to="/contato"><li>{optionsMenu[4]}</li></Link>
         </ul>
         </nav>
+
+        {/* cart items */}
+        <CartItem classname={dropdown} products={productsSelected} removeDropdown={removeDropdown} totalPrice={totalPrice}/>
     </>
     )
 }

@@ -1,0 +1,109 @@
+.modalContainer {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.modal{
+    background-color: #fff;
+
+    display: none;
+    position: fixed;
+
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.titleCart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.titleCart h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.titleCart .icon {
+    font-size: 1.5rem;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.modalItemsContent {
+    max-height: 400px;
+}
+
+.itemModal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 60px;
+
+    padding: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.emptyCart {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: var(--second-font);
+
+    margin-top: 50px;
+}
+
+.itemModal > p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: var(--second-font);
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoItem img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.infoItem p {
+    font-size: 1.3rem;
+    font-family: var(--primary-font);
+    color: #7a7676;
+}
+
+.excludeIcon {
+    font-size: 1.5rem;
+}
+
+.totalPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.totalPrice p {
+    font-family: var(--second-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.totalPrice p > span {
+    font-size: 1.4rem;
+    font-weight: 800;
+}

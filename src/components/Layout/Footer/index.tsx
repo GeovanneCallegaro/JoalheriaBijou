@@ -1,3 +1,4 @@
+/* Import css and icons */
 import './styles.css'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {AiOutlineMail} from 'react-icons/ai'

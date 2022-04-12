@@ -1,3 +1,4 @@
+/* import css and icons */
 import './styles.css'
 import {FaWhatsapp} from 'react-icons/fa'
 import {AiOutlineInfoCircle, AiOutlineSearch} from 'react-icons/ai'

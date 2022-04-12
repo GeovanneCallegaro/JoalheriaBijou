@@ -197,6 +197,10 @@ header {
         padding: 10px;
     }
 
+    .menuMobileOptions ul a li {
+        padding: 10px;
+    }
+
     .loginSectionMobile {
         font-size: 1.6rem;
     }

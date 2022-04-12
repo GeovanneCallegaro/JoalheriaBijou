@@ -53,8 +53,20 @@
     height: 220px;
 }
 
-.visualization {
+.visualization.collection {
     margin-top: 179px;
+}
+
+.textImageContainerCollection h3, .textImageContainerCollection p {
+    font-size: 1.3rem;
+    font-family: var(--second-font);
+    text-indent: 1rem;
+    font-weight: 300;
+}
+
+.textImageContainerCollection p {
+    margin-top: 2px;
+    color: rgb(139, 139, 139);
 }
 
 /*Hover and Effects*/
@@ -69,7 +81,7 @@
         height: 200px;
     }
 
-    .visualization {
+    .visualization.collection {
         margin-top: 160px;
     }
 }

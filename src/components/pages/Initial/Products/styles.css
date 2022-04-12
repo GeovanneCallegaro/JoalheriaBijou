@@ -23,11 +23,10 @@
     transition: all ease-out 0.4s;
 }
 
-
 .textImageContainer h3, .textImageContainer p {
     font-size: 1.3rem;
     font-family: var(--second-font);
-    text-indent: 1rem;
+    
     font-weight: 300;
 }
 
@@ -50,8 +49,6 @@
     align-items: center;
 
     display: none;
-
-    
 }
 
 .visualization p, .visualization-two p, .visualization-three p, .visualization-four p {
@@ -64,14 +61,9 @@
     display: flex;
 }
 
-.arrowSliderLeft, .arrowSliderRight {
-    display: none;
-}
-
 /*HOVER AND EFFECTS*/
 .imageContainer img:hover {
     cursor: pointer;
-    
 }
 
 /*MEDIA QUERIES*/

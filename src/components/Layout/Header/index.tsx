@@ -1,19 +1,25 @@
+/* import css and icons */
 import './styles.css'
 import {BsCartCheck} from 'react-icons/bs'
 import {FaUserCircle} from 'react-icons/fa'
 import {AiOutlineMenu} from 'react-icons/ai'
+
+/* import Link for react-router */
 import {Link} from 'react-router-dom'
 
-
+/* typescript interface for props */
 interface Props {
     navText: Array<any>
 }
 
 export const Header = ({...navText}: Props) => {
+
+    /* anonymous function to map props to a constant */
     const optionsMenu = navText.navText.map((item) => {
         return item
     })
 
+    /* anonymous function to display mobile menu by click */
     const handleMenu = () => {
         const menu = document.querySelector('.menuMobileOptions') as HTMLElement
         
@@ -51,6 +57,8 @@ export const Header = ({...navText}: Props) => {
                 <AiOutlineMenu onClick={handleMenu} className='menuIcon'/>
             </div>
         </header>
+
+        {/* Menu Mobile section */}
         <nav className='menuMobileOptions'>
             <div className='loginSectionMobile'>
                 <FaUserCircle className='userIcon'/>

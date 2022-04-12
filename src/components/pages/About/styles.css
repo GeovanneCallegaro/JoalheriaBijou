@@ -33,7 +33,7 @@
     margin-bottom: 15px;
 }
 
-.imageContainer{
+.imageContainerAbout {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,24 +42,24 @@
     margin-top: 20px;
 }
 
-.imageContainer .firstImageAbout {
+.imageContainerAbout  .firstImageAbout {
     width: 415px;
     height: 270px;
     
 }
 
-.imageContainer img {
+.imageContainerAbout  img {
     height: 270px;
     width: 310px;
 }
 
 /*MEDIA QUERIES*/
 @media (max-width: 720px) {
-    .imageContainer .firstImageAbout {
+    .imageContainerAbout  .firstImageAbout {
         width: 310px;
     }
 
-    .imageContainer img {
+    .imageContainerAbout  img {
         width: 310px;
     }
 }

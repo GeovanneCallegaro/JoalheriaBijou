@@ -1,11 +1,15 @@
+/* import css and icons */
 import './styles.css'
 import {BsShieldShaded} from 'react-icons/bs'
 
+/* typescript interface for props */
 interface Props {
     navText: Array<any>
 }
 
 export const FooterInformation = ({...navText}: Props) => {
+
+    /* anonymous function to map props to a constant */
     const optionsUl = navText.navText.map((item: any) => {
         return item
     })
@@ -15,6 +19,7 @@ export const FooterInformation = ({...navText}: Props) => {
             <div className='descriptionShop'>
                 <h3>Loja</h3>
                 <ul>
+                    {/*map to list for footer information*/}
                     {optionsUl.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}

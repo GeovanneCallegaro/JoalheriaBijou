@@ -5,10 +5,32 @@
             "type": "pulseira",
             "name": "Pulseira",
             "price": "450.00", 
-            "src": "https://static.wixstatic.com/media/157553_5c7bfd55032b47afbf0d5d6d21856b72.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_5c7bfd55032b47afbf0d5d6d21856b72.webp"
+            "src": "https://static.wixstatic.com/media/157553_5c7bfd55032b47afbf0d5d6d21856b72.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_5c7bfd55032b47afbf0d5d6d21856b72.webp",
+            "selected": false
         }, 
         {
-            
+            "id": 2, 
+            "type": "cordão",
+            "name": "Cordão",
+            "price": "300.00", 
+            "src": "https://static.wixstatic.com/media/157553_477528c34660447a8a0afdbdf1a0fe05.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_477528c34660447a8a0afdbdf1a0fe05.webp",
+            "selected": false
+        }, 
+        {
+            "id": 3, 
+            "type": "brinco",
+            "name": "Brinco",
+            "price": "150.00", 
+            "src": "https://static.wixstatic.com/media/157553_693426837c2f455693946bd5ff85e975.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_693426837c2f455693946bd5ff85e975.webp",
+            "selected": false
+        }, 
+        {
+            "id": 4, 
+            "type": "cordão",
+            "name": "Cordão",
+            "price": "2000.00", 
+            "src": "https://static.wixstatic.com/media/157553_abfd11f66c2a446595e5c09ce463b4b7.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_abfd11f66c2a446595e5c09ce463b4b7.webp",
+            "selected": false
         }
     ]
 }

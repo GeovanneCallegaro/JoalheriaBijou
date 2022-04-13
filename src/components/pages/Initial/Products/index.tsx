@@ -1,13 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { toogleProduct } from '../../../../store/Products/Products.actions'
-import { selectAllProducts } from '../../../../store/Products/Products.selectors'
+import { selectFourProducts } from '../../../../store/Products/Products.selectors'
 import './styles.css'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 
 export const Products = () => {
     const dispatch = useDispatch()
-    const products = useSelector(selectAllProducts)
-
+    const products = useSelector(selectFourProducts)
 
     const handleToggle = (id: number) => {
         dispatch(toogleProduct(id))

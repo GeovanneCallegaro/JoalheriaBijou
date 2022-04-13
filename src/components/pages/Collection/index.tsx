@@ -1,7 +1,18 @@
 /* import css */
+import { AiOutlineShoppingCart } from 'react-icons/ai'
+import { useDispatch, useSelector } from 'react-redux'
+import { toogleProduct } from '../../../store/Products/Products.actions'
+import { selectFiveProducts, selectFourProducts } from '../../../store/Products/Products.selectors'
 import './styles.css'
 
 export const Collection = () => {
+    const productsFour = useSelector(selectFourProducts)
+    const allProducts = useSelector(selectFiveProducts)
+    const dispatch = useDispatch()
+
+    const handleToggle = (id: number) => {
+        dispatch(toogleProduct(id))
+    }
 
     /* function to show preview div in image */
     const showVisualization = (event: any) => {
@@ -39,144 +50,57 @@ export const Collection = () => {
             <div className='line'></div>
             <div className='imagesContainerCollection'>
                 <div className="firstLineImages">
-                    <div className="containerImages">
-                        <div className='visualization collection' id='one' data-image>
-                            <p>Visualização rápida</p>
+                    {productsFour.map((product: any) => (
+                        <div className="containerImages">
+                            <div className='visualization collection' data-image={product.id}>
+                                <p>Visualização rápida</p>
+                            </div>
+                            <img 
+                                src={product.src}
+                                alt={product.id}
+                                onMouseEnter={(event) => showVisualization(event.target)}
+                                onMouseLeave={removeVisualization}
+                                className="imagem"
+                                data-image={product.id}
+                            />
+                            <div className='textImageContainerCollection'>
+                                <div>
+                                    <h3>{product.name}</h3>
+                                    <p>{product.price}</p>
+                                </div>
+                                <div className='plusDiv'>
+                                    <AiOutlineShoppingCart className='iconPlus' onClick={() => handleToggle(product.id)}/>
+                                </div>
+                            </div>
+                            
                         </div>
-                        <img 
-                            src="https://static.wixstatic.com/media/157553_5c7bfd55032b47afbf0d5d6d21856b72.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_5c7bfd55032b47afbf0d5d6d21856b72.webp" 
-                            alt="Imagem 1" 
-                            onMouseEnter={(event) => showVisualization(event.target)} 
-                            onMouseLeave={removeVisualization} 
-                            className="imagem" 
-                            data-image
-                        />
-                        <div className='textImageContainerCollection'>
-                            <h3>Eu sou um produto!</h3>
-                            <p>R$19.99</p>
-                        </div>
-                    </div>
-                    <div className="containerImages">
-                    <div className='visualization collection' id='two' data-image='2'>
-                            <p>Visualização rápida</p>
-                        </div>
-                        <img 
-                            src="https://static.wixstatic.com/media/157553_477528c34660447a8a0afdbdf1a0fe05.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_477528c34660447a8a0afdbdf1a0fe05.webp" 
-                            alt=""  
-                            onMouseEnter={(event) => showVisualization(event.target)} 
-                            onMouseLeave={removeVisualization} 
-                            className="imagem" 
-                            data-image='2'
-                        />
-                        <div className='textImageContainerCollection'>
-                            <h3>Eu sou um produto!</h3>
-                            <p>R$19.99</p>
-                        </div>
-                    </div>
-                    <div className="containerImages">
-                    <div className='visualization collection' id='three' data-image='3'>
-                            <p>Visualização rápida</p>
-                        </div>
-                        <img 
-                            src="https://static.wixstatic.com/media/157553_693426837c2f455693946bd5ff85e975.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_693426837c2f455693946bd5ff85e975.webp" 
-                            alt="" 
-                            onMouseEnter={(event) => showVisualization(event.target)} 
-                            onMouseLeave={removeVisualization} 
-                            className="imagem" 
-                            data-image='3'
-                        />
-                        <div className='textImageContainerCollection'>
-                            <h3>Eu sou um produto!</h3>
-                            <p>R$19.99</p>
-                        </div>
-                    </div>
-                    <div className="containerImages">
-                    <div className='visualization collection' id='four' data-image='4'>
-                            <p>Visualização rápida</p>
-                        </div>
-                        <img 
-                            src="https://static.wixstatic.com/media/157553_abfd11f66c2a446595e5c09ce463b4b7.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_abfd11f66c2a446595e5c09ce463b4b7.webp" 
-                            alt="" 
-                            onMouseEnter={(event) => showVisualization(event.target)} 
-                            onMouseLeave={removeVisualization} 
-                            className="imagem" 
-                            data-image='4'
-                        />
-                        <div className='textImageContainerCollection'>
-                            <h3>Eu sou um produto!</h3>
-                            <p>R$19.99</p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
-                <div className="secondLineImages">
-                    <div className="containerImages">
-                    <div className='visualization collection' id='five' data-image='5'>
+                <div className='secondLineImages'>
+                    {allProducts.map((product: any) => (
+                        <div className="containerImages">
+                        <div className='visualization collection' data-image={product.id}>
                             <p>Visualização rápida</p>
                         </div>
                         <img 
-                            src="https://static.wixstatic.com/media/157553_1ce990329b054998baf81e8ab619a19c.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_1ce990329b054998baf81e8ab619a19c.webp" 
-                            alt="" 
-                            onMouseEnter={(event) => showVisualization(event.target)} 
-                            onMouseLeave={removeVisualization} 
-                            className="imagem" 
-                            data-image='5'
+                            src={product.src}
+                            alt={product.id}
+                            onMouseEnter={(event) => showVisualization(event.target)}
+                            onMouseLeave={removeVisualization}
+                            className="imagem"
+                            data-image={product.id}
                         />
-                        <div className="textImageContainerCollection">
-                            <h3>Eu sou um produto!</h3>
-                            <p>R$19.99</p>
+                        <div className='textImageContainerCollection'>
+                            <div>
+                                <h3>{product.name}</h3>
+                                <p>{product.price}</p>
+                            </div>
+                            <div className='plusDiv'>
+                                    <AiOutlineShoppingCart className='iconPlus' onClick={() => handleToggle(product.id)}/>
+                            </div>
                         </div>
                     </div>
-                    <div className="containerImages">
-                    <div className='visualization collection' id='six' data-image='6'>
-                            <p>Visualização rápida</p>
-                        </div>
-                        <img 
-                            src="https://static.wixstatic.com/media/157553_5f034647787d49fabb405a91c066a160.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_5f034647787d49fabb405a91c066a160.webp" 
-                            alt="" 
-                            onMouseEnter={(event) => showVisualization(event.target)} 
-                            onMouseLeave={removeVisualization} 
-                            className="imagem" 
-                            data-image='6'
-                        />
-                        <div className="textImageContainerCollection">
-                            <h3>Eu sou um produto!</h3>
-                            <p>R$19.99</p>
-                        </div>
-                    </div>
-                    <div className="containerImages">
-                    <div className='visualization collection' id='seventh' data-image='7'>
-                            <p>Visualização rápida</p>
-                        </div>
-                        <img 
-                            src="https://static.wixstatic.com/media/157553_00210e4f8a634d42b76649e84ff57028.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_00210e4f8a634d42b76649e84ff57028.webp" 
-                            alt="" 
-                            onMouseEnter={(event) => showVisualization(event.target)} 
-                            onMouseLeave={removeVisualization} 
-                            className="imagem" 
-                            data-image='7'
-                        />
-                        <div className="textImageContainerCollection">
-                            <h3>Eu sou um produto!</h3>
-                            <p>R$19.99</p>
-                        </div>
-                    </div>
-                    <div className="containerImages">
-                    <div className='visualization collection' id='eight' data-image='8'>
-                            <p>Visualização rápida</p>
-                        </div>
-                        <img 
-                            src="https://static.wixstatic.com/media/157553_b5e8a6f29be84fe2bebb54d0e2b1ca94.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_b5e8a6f29be84fe2bebb54d0e2b1ca94.webp" 
-                            alt="" 
-                            onMouseEnter={(event) => showVisualization(event.target)} 
-                            onMouseLeave={removeVisualization} 
-                            className="imagem" 
-                            data-image='8'
-                        />
-                        <div className="textImageContainerCollection">
-                            <h3>Eu sou um produto!</h3>
-                            <p>R$19.99</p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>

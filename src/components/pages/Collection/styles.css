@@ -57,6 +57,28 @@
     margin-top: 179px;
 }
 
+.textImageContainerCollection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textImageContainerCollection .plusDiv {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textImageContainerCollection .plusDiv .iconPlus{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .textImageContainerCollection h3, .textImageContainerCollection p {
     font-size: 1.3rem;
     font-family: var(--second-font);

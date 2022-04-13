@@ -288,10 +288,20 @@
         font-size: 1.5rem;
         margin-left: 50px;
     }
+
+    .textEmptyCartContainer > div {
+        padding: 15px;
+        width: 280px;
+    }
 }
 
 @media (max-width: 350px) {
     .buttonsSection .continuesCart, .buttonsSection .finishCart {
+        padding: 15px;
+        width: 200px;
+    }
+
+    .textEmptyCartContainer > div {
         padding: 15px;
         width: 200px;
     }

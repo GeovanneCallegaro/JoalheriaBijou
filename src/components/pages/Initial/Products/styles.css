@@ -23,6 +23,28 @@
     transition: all ease-out 0.4s;
 }
 
+.textImageContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textImageContainer .plusDiv {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textImageContainer .plusDiv .iconPlus{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .textImageContainer h3, .textImageContainer p {
     font-size: 1.3rem;
     font-family: var(--second-font);

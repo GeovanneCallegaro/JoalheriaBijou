@@ -44,7 +44,7 @@ export const CartItem = (props: any) => {
                     <div className='textEmptyCartContainer'>
                         <h2>Seu carrinho de compras está vazio</h2>
                         <p>Navegue pelas categorias da loja ou faça uma busca pelo seu produto</p>
-                        <div>Continuar Comprando</div>
+                        <div onClick={closeCart}>Continuar Comprando</div>
                     </div>
                 </div>
                 </>
@@ -63,7 +63,7 @@ export const CartItem = (props: any) => {
 
                 {products.length > 0 ? (
                     <div className='buttonsSection'>
-                        <div className='continuesCart'>Continuar Comprando</div>
+                        <div className='continuesCart' onClick={closeCart}>Continuar Comprando</div>
                         <div className='finishCart'>Finalizar Compra</div>
                     </div>
                 ): ('')}

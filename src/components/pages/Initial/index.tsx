@@ -11,6 +11,7 @@ export const Initial = () => {
             <Slider />
             <SectionInformation />
             <Products
+
             />
         </div>
     )

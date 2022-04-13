@@ -31,10 +31,17 @@ function App() {
     const [dropdown, setDropdown] = useState('')
 
     const handleCart = () => {
+      const body = document.querySelector('body') as HTMLElement
+      body.style.position = 'fixed'
+      body.style.width = '100%'
+
       setDropdown('drop')
     }
 
     const closeCart = () => {
+      const body = document.querySelector('body') as HTMLElement
+      body.style.position = 'static'
+      
       setDropdown('')
     }
 

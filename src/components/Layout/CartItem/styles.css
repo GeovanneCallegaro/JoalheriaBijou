@@ -34,7 +34,7 @@
 }
 
 .containerCartItems {
-    height: 500px;
+    height: 300px;
     overflow-y: scroll;
     position: relative;
     padding: 10px;
@@ -62,7 +62,7 @@
     
     padding: 10px;
     border-bottom: 1px solid #ccc;
-    height: 180px;
+    height: 100px;
 }
 
 .containerCartItem:last-child {
@@ -70,8 +70,8 @@
 }
 
 .imageCartItem img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .infosCartItem {
@@ -206,3 +206,98 @@
 .drop {
     display: block !important;
 }
+
+/*MEDIA QUERIES*/
+@media (max-width: 1440px) {
+    .headerCartContainer h2 {
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 1336px) {
+    .containerCart {
+        width: 40%;
+    }
+
+    .headerCartContainer h2 {
+        margin-left: 140px;
+    }
+
+    .buttonsSection {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .containerCart {
+        width: 50%;
+    }
+
+    .containerCartItems {
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+    .containerCartItem {
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding: 5px;
+        height: 80px;
+    }
+
+    .imageCartItem img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 786px) {
+    .containerCart {
+        width: 60%;
+    }
+}
+
+@media (max-width: 630px) {
+    .containerCart {
+        width: 70%;
+    }
+}
+
+@media (max-width: 595px) {
+    .containerCart {
+        width: 80%;
+    }
+
+    .headerCartContainer h2 {
+        margin-left: 80px;
+    }
+
+    .infosCartItem {
+        margin-right: 70px;
+    }
+}
+
+@media (max-width: 442px) {
+    .buttonsSection .continuesCart, .buttonsSection .finishCart {
+        padding: 15px;
+        width: 280px;
+    }
+
+    .headerCartContainer h2 {
+        font-size: 1.5rem;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 350px) {
+    .buttonsSection .continuesCart, .buttonsSection .finishCart {
+        padding: 15px;
+        width: 200px;
+    }
+
+    .headerCartContainer h2 {
+        margin-left: 20px;
+    }
+}
+

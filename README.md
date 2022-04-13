@@ -22,7 +22,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Adicionar o react-router e concluir outras páginas do projeto
 - [x] Adicionar o redux para ter contexto global 
 - [x] Adicionando, removendo e contas no carrinho 
-- [ ] Adicionar página para login de usuário 
+- [x] Adicionar página para login de usuário 
+- [ ] Adicionar páginas para produtos unitários
 - [ ] Adicionar comunicação por email (report a empresa)
 
 ## 💻 Pré-requisitos
@@ -42,7 +43,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="Logo do React Router"></img>
 <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="Logo do Redux"></img>
 
-## 🚀 Instalando ToDo APP
+## 🚀 Instalando Projeto Joalheria
 
 Para instalar o projeto, siga estas etapas:
 
@@ -51,7 +52,7 @@ Windows:
 npm install
 ```
 
-## ☕ Usando ToDo App
+## ☕ Usando Projeto Joalheria
 
 Para usar o projeto, siga estas etapas:
 
@@ -60,6 +61,12 @@ Adicione uma tarefa pelo botão ou pelo enter do teclado
 Marque ela como concluída e desmarque, tente adicionar varias tarefas
 ```
 
+## 🔐Fazer login no projeto 
+
+```
+Email: callegarog00@gmail.com
+Password: callegaro2018
+```
 
 ## 📫 Contribuindo para o projeto
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->

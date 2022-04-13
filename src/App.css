@@ -23,6 +23,10 @@
     color: #fff;
 }
 
+.drop {
+    display: block !important;
+}
+
 /*MEDIA QUERIES*/
 @media (max-width: 840px) {
     .button-chat {

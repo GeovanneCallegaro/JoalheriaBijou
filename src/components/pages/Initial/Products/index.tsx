@@ -2,9 +2,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toogleProduct } from '../../../../store/Products/Products.actions'
 import { selectAllProducts } from '../../../../store/Products/Products.selectors'
 import './styles.css'
-
-
-
 export const Products = () => {
     const dispatch = useDispatch()
     const products = useSelector(selectAllProducts)
@@ -52,9 +49,9 @@ export const Products = () => {
                             alt={product.id}
                             onMouseEnter={(event) => showVisualization(event.target)} 
                             onMouseLeave={removeVisualization}
-                            onClick={() => handleToggle(product.id)}
                             className='imagemInitial'
                             data-initial={product.id}
+                            onClick={() => handleToggle(product.id)}
                         />
                         <div className='textImageContainer'>
                             <h3>{product.name}</h3>

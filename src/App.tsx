@@ -11,6 +11,7 @@ import { SubHeader } from "./components/Layout/SubHeader";
 import { FooterInformation } from "./components/Layout/FooterInformation";
 import { Footer } from "./components/Layout/Footer";
 import { SearchBar } from "./components/Layout/SearchBarMobile";
+import { CartItem } from './components/Layout/CartItem';
 
 /* import pages components */
 import { Initial } from "./components/pages/Initial";
@@ -19,15 +20,39 @@ import { Shop } from "./components/pages/Shop";
 import { About } from "./components/pages/About";
 import { Contact } from "./components/pages/ContactUs";
 
+import { useSelector } from 'react-redux';
+import { selectSelectedProducts, totalPriceProducts } from './store/Products/Products.selectors';
+import { useState } from 'react';
+
 function App() {
-  
+    const productsSelected = useSelector(selectSelectedProducts)
+    const totalPrice = useSelector(totalPriceProducts)
+
+    const [dropdown, setDropdown] = useState('')
+
+    const handleCart = () => {
+      const body = document.querySelector('body') as HTMLElement
+      body.style.position = 'fixed'
+      body.style.width = '100%'
+
+      setDropdown('drop')
+    }
+
+    const closeCart = () => {
+      const body = document.querySelector('body') as HTMLElement
+      body.style.position = 'static'
+      
+      setDropdown('')
+    }
 
   return (
     <Router>
     <div className="App">
+      <CartItem products={productsSelected} totalPrice={totalPrice} className={dropdown} closeCart={closeCart}/>
       <SubHeader />
       <Header 
         navText={['Início', 'Coleção', 'Loja', 'Sobre', 'Contato']}
+        handleCart={handleCart}
       />
       <SearchBar />
       <Switch>

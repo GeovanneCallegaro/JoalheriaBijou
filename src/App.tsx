@@ -23,6 +23,7 @@ import { Contact } from "./components/pages/ContactUs";
 import { useSelector } from 'react-redux';
 import { selectSelectedProducts, totalPriceProducts } from './store/Products/Products.selectors';
 import { useState } from 'react';
+import { Login } from './components/pages/Login';
 
 function App() {
     const productsSelected = useSelector(selectSelectedProducts)
@@ -57,6 +58,9 @@ function App() {
       />
       <SearchBar />
       <Switch>
+        <Route path="/login">
+          <Login />
+        </Route>
         <Route path="/contato">
           <Contact/>
         </Route>

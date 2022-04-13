@@ -44,8 +44,8 @@ export const Header = (props: any) => {
             </nav>
 
             <div className='loginSection'>
-                <FaUserCircle className='userIcon'/>
-                <p>Login</p>
+                <FaUserCircle className='userIcon' />
+                <Link to="/login"><p>Login</p></Link>
                 <BsCartCheck className='cartIcon' onClick={handleCart}/>
             </div>
 

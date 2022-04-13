@@ -74,6 +74,10 @@ header {
     margin-right: 15px;
 }
 
+.loginSection a {
+    text-decoration: none;
+}
+
 .cartIcon {
     font-size: 1.8rem;
     color: #7a7676;

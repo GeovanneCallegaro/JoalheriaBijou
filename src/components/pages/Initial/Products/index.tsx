@@ -2,9 +2,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toogleProduct } from '../../../../store/Products/Products.actions'
 import { selectAllProducts } from '../../../../store/Products/Products.selectors'
 import './styles.css'
+import {AiOutlineShoppingCart} from 'react-icons/ai'
+
 export const Products = () => {
     const dispatch = useDispatch()
     const products = useSelector(selectAllProducts)
+
 
     const handleToggle = (id: number) => {
         dispatch(toogleProduct(id))
@@ -51,11 +54,15 @@ export const Products = () => {
                             onMouseLeave={removeVisualization}
                             className='imagemInitial'
                             data-initial={product.id}
-                            onClick={() => handleToggle(product.id)}
                         />
                         <div className='textImageContainer'>
-                            <h3>{product.name}</h3>
-                            <p>R$ {product.price}</p>
+                            <div>
+                                <h3>{product.name}</h3>
+                                <p>R$ {product.price}</p>
+                            </div>
+                            <div className='plusDiv'>
+                                <AiOutlineShoppingCart className='iconPlus' onClick={() => handleToggle(product.id)}/>
+                            </div>
                         </div>
                     </div>
                 ))}

@@ -35,6 +35,7 @@ function App() {
       body.style.position = 'fixed'
       body.style.width = '100%'
 
+      console.log('handleCart')
       setDropdown('drop')
     }
 

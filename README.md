@@ -73,6 +73,18 @@ Password: callegaro2018
  <img src="footerinformation.png" alt="Imagem do projeto 2"> </img>
  
  Para enviar uma mensagem para empresa, você deve ir na seguinte página e escrever sua mensagem. Após toda verificação ser feita, o emial será enviado. Veja exemplo na imagem abaixo:
+ 
+ <img src="contato.png" alt="Imagem do projeto 3"> </img> 
+ 
+> Observação sobre contato com a empresa: Por ser um serviço gratuito, a empresa sempre receberá mensagem devido por mi. e nãopelo que foi inserido pelo usuário!
+> Observação geral 1: O serviço de entrega de emial é limitado, ou seja, quando você testar, pode ter tido o limite excedido!
+
+```
+Email e senha para verificar emails para empresa: 
+
+email: bijoujoalheria@gmail.com
+senha: bijou1234
+```
 
 
 ## 📫 Contribuindo para o projeto

@@ -108,16 +108,30 @@
     margin-bottom: 10px;
 }
 
-.formContact form button {
+.formContact form .inputButtonSubmit {
     background-color: var(--primary-color);
-    padding: 15px;
+    padding: 10px;
     border: none;
 
     font-family: var(--primary-font);
     color: #fff;
     font-size: 1.6rem;
 
+    text-align: center;
+
     cursor: pointer;
+}
+
+.paragraphErrorEmail {
+    text-align: center;
+    color: #ff4444;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    font-family: var(--second-font);
+
+    font-weight: 500;
+
+    display: none;
 }
 
 /*MEDIA QUERIES*/
@@ -165,7 +179,7 @@
         height: 30px;
     }
 
-    .formContact form button {
+    .formContact form .inputButtonSubmit {
         padding: 10px;
     }
 }
@@ -175,7 +189,7 @@
         width: 300px;
     }
 
-    .formContact form button {
+    .formContact form .inputButtonSubmit {
         width: 300px;
     }
 }

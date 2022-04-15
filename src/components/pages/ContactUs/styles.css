@@ -88,6 +88,33 @@
     border: none;
 
     margin-left: 250px;
+
+    cursor: pointer;
+}
+
+.emptyFieldName, .emptyFieldSurename, .emptyFieldEmail, .emptyFieldData {
+    font-size: 1.5rem;
+    color: #ff4444;
+    text-align: center;
+    font-family: var(--second-font);
+    margin-top: -5px;
+
+    display: none;
+}
+
+.emptyFieldData {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sucessEmail {
+    color: rgb(6, 161, 6);
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: var(--second-font);
+    margin-bottom: 10px;
+    
+    display: none;
 }
 
 @media (max-width: 440px) {

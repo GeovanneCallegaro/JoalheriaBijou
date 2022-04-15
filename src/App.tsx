@@ -25,6 +25,7 @@ import { useSelector } from 'react-redux';
 import { selectSelectedProducts, totalPriceProducts } from './store/Products/Products.selectors';
 import { useState } from 'react';
 import { Login } from './components/pages/Login';
+import { FinalBuyPage } from './components/pages/FinalBuyPage';
 
 function App() {
     const productsSelected = useSelector(selectSelectedProducts)
@@ -59,6 +60,9 @@ function App() {
       />
       <SearchBar />
       <Switch>
+        <Route path="/buy">
+          <FinalBuyPage />
+        </Route>
         <Route path="/product/:id">
           <ProductPage handleCart={handleCart}/>
         </Route>

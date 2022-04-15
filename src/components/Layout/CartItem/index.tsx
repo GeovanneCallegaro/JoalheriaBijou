@@ -3,6 +3,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { BsTrash } from 'react-icons/bs'
 import { toogleProduct } from '../../../store/Products/Products.actions'
 import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 
 export const CartItem = (props: any) => {
@@ -64,7 +65,7 @@ export const CartItem = (props: any) => {
                 {products.length > 0 ? (
                     <div className='buttonsSection'>
                         <div className='continuesCart' onClick={closeCart}>Continuar Comprando</div>
-                        <div className='finishCart'>Finalizar Compra</div>
+                        <Link to="/buy"><div className='finishCart' onClick={closeCart}>Finalizar Compra</div></Link>
                     </div>
                 ): ('')}
         </div>

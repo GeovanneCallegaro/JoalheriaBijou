@@ -149,10 +149,14 @@
     border: 1px solid #ccc;
 }
 
-.buttonsSection .finishCart {
+.buttonsSection a .finishCart {
     color: #fff;
     background-color: var(--primary-color);
     margin-top: 10px;
+}
+
+.buttonsSection a {
+    text-decoration: none;
 }
 
 .containerEmpty {

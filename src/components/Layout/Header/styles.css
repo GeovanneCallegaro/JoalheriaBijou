@@ -66,7 +66,7 @@ header {
     color: #7a7676;
 }
 
-.loginSection p {
+.loginSection p, .loginSectionMobile p {
     font-size: 1.5rem;
     color: #7a7676;
     font-family: var(--second-font);
@@ -74,7 +74,7 @@ header {
     margin-right: 15px;
 }
 
-.loginSection a {
+.loginSection a, .loginSectionMobile a {
     text-decoration: none;
 }
 

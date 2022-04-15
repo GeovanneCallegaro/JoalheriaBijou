@@ -59,7 +59,7 @@ export const Header = (props: any) => {
         <nav className='menuMobileOptions'>
             <div className='loginSectionMobile'>
                 <FaUserCircle className='userIcon'/>
-                <p>Login</p>
+                <Link to="/login"><p>Login</p></Link>
             </div>
         <ul>
             <Link to="/"><li>{optionsMenu[0]}</li></Link>

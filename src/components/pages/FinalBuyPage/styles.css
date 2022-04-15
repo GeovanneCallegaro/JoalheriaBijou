@@ -1,0 +1,202 @@
+.contentFinalBuy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.productsBuy {
+    max-height: 800px;
+    overflow: scroll;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-right: 20px;
+
+    width: 500px;
+}
+
+.productBuy {
+    width: 100%;
+}
+
+.infoProduct {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.infoProduct img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.productPrice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.productPrice h3 {
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+
+}
+
+.productPrice p {
+    font-size: 1.3rem;
+    font-family: var(--second-font);
+}
+
+.totalPriceBuy {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.totalPriceBuy p {
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.totalPriceBuy p > span {
+    font-size: 1.6rem;
+}
+
+.informationBuy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.localInformationsByCep {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+
+    margin-bottom: 40px;
+
+    display: none;
+}
+
+.localInformationsByCep h1 {
+    font-size: 1.5rem;
+    font-family: var(--second-font);
+    margin-bottom: 10px;
+}
+
+.localInformationsByCep p {
+    font-size: 1.4rem;
+    font-family: var(--primary-font);
+}
+
+.cepForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cepForm input {
+    width: 200px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.cepForm input:focus {
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+.cepForm button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    width: 70px;
+    cursor: pointer;
+
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+}
+
+.buyButtonFinal button {
+    cursor: pointer;
+    width: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #00a800;
+    border: none;
+    color: #fff;
+
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 870px) {
+    .productsBuy {
+        width: 300px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cepForm input {
+        width: 160px;
+    }
+
+    .cepForm button {
+        width: 70px;
+    }
+
+    .buyButtonFinal button {
+        width: 240px;
+    }
+}
+
+@media (max-width: 590px) {
+    .contentFinalBuy {
+        flex-direction: column;
+    }
+
+    .productsBuy {
+        width: 400px;
+        margin-right: 0;
+    }
+
+    .cepForm {
+        margin-top: 70px;
+    }
+
+    .buyButtonFinal {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 416px) {
+    .productsBuy {
+        width: 300px;
+    }
+}

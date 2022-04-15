@@ -3,6 +3,7 @@ import { toogleProduct } from '../../../../store/Products/Products.actions'
 import { selectFourProducts } from '../../../../store/Products/Products.selectors'
 import './styles.css'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 export const Products = (props: any) => {
     const {handleCart} = props
@@ -49,14 +50,16 @@ export const Products = (props: any) => {
                         <div className='visualization' data-initial={product.id}>
                             <p>Visualização rápida</p>
                         </div>
-                        <img 
-                            src={product.src}
-                            alt={product.id}
-                            onMouseEnter={(event) => showVisualization(event.target)} 
-                            onMouseLeave={removeVisualization}
-                            className='imagemInitial'
-                            data-initial={product.id}
-                        />
+                        <Link to={`/product/${product.id}`}>
+                            <img 
+                                src={product.src[0]}
+                                alt={product.id}
+                                onMouseEnter={(event) => showVisualization(event.target)} 
+                                onMouseLeave={removeVisualization}
+                                className='imagemInitial'
+                                data-initial={product.id}
+                            />
+                        </Link>
                         <div className='textImageContainer'>
                             <div>
                                 <h3>{product.name}</h3>

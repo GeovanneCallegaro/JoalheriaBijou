@@ -19,6 +19,7 @@ import { Collection } from "./components/pages/Collection";
 import { Shop } from "./components/pages/Shop";
 import { About } from "./components/pages/About";
 import { Contact } from "./components/pages/ContactUs";
+import { ProductPage } from './components/pages/ProductPage';
 
 import { useSelector } from 'react-redux';
 import { selectSelectedProducts, totalPriceProducts } from './store/Products/Products.selectors';
@@ -58,6 +59,9 @@ function App() {
       />
       <SearchBar />
       <Switch>
+        <Route path="/product/:id">
+          <ProductPage handleCart={handleCart}/>
+        </Route>
         <Route path="/login">
           <Login />
         </Route>
@@ -76,6 +80,7 @@ function App() {
         <Route path="/">
           <Initial handleCart={handleCart}/>
         </Route>
+
       </Switch>
       <FooterInformation 
         navText={['Início', 'Coleção', 'Loja', 'Sobre', 'Contato', 'FAQ', 'Envio e Devoluções', 'Metódos de Pagamento']}

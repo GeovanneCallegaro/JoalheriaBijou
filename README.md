@@ -23,7 +23,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Adicionar o redux para ter contexto global 
 - [x] Adicionando, removendo e contas no carrinho 
 - [x] Adicionar página para login de usuário 
-- [ ] Adicionar páginas para produtos unitários
+- [x] Adicionar páginas para produtos unitários
 - [x] Adicionar comunicação por email (report a empresa)
 
 ## 💻 Pré-requisitos

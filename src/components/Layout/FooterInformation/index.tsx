@@ -25,8 +25,7 @@ export const FooterInformation = ({...navText}: Props) => {
         const input = document.querySelector('.inputEmailFooter') as HTMLElement
         const emailRegex = /^[\w-]+@([\w-]+\.)+[\w-]{2,4}$/g
         
-
-        if(!value || emailRegex.test(value) === false) {
+        if(!value ) {
             input.style.border = '2px solid #ff4444'
             p.style.display = 'block'
 
@@ -34,11 +33,22 @@ export const FooterInformation = ({...navText}: Props) => {
                 input.style.border = '2px solid var(--primary-color)'
                 p.style.display = 'none'
             }, 5000)
+
+            return
         } 
 
-        if(value && emailRegex.test(value) === true) {
-            sendEmail()
+        if(emailRegex.test(value) === false) {
+            input.style.border = '2px solid #ff4444'
+            p.style.display = 'block'
+
+            setInterval(() => {
+                input.style.border = '2px solid var(--primary-color)'
+                p.style.display = 'none'
+            }, 5000)
+            return
         }
+
+        sendEmail()
     }
 
     const sendEmail = () => {
@@ -46,8 +56,7 @@ export const FooterInformation = ({...navText}: Props) => {
 
         emailjs.send('service_raxyksg', 'template_inimkvb', {
             email_user: value,
-            name_emprise: 'Bijou', 
-            to_name: 'Carlos', 
+            name_emprise: 'Geovanne Callegaro', 
         })
             .then(response => console.log('Sucess' + response.status + response.text))
             .catch(err => console.log('Error!' + err.status + err.text))

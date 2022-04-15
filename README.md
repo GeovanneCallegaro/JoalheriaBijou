@@ -24,7 +24,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Adicionando, removendo e contas no carrinho 
 - [x] Adicionar página para login de usuário 
 - [ ] Adicionar páginas para produtos unitários
-- [ ] Adicionar comunicação por email (report a empresa)
+- [x] Adicionar comunicação por email (report a empresa)
 
 ## 💻 Pré-requisitos
 
@@ -57,8 +57,7 @@ npm install
 Para usar o projeto, siga estas etapas:
 
 ```
-Adicione uma tarefa pelo botão ou pelo enter do teclado
-Marque ela como concluída e desmarque, tente adicionar varias tarefas
+Adicione itens ao seu carrinho, faça comunicação com a empresa pelo report e receba promoções pelo seu email ao cadastrar
 ```
 
 ## 🔐Fazer login no projeto 
@@ -67,6 +66,10 @@ Marque ela como concluída e desmarque, tente adicionar varias tarefas
 Email: callegarog00@gmail.com
 Password: callegaro2018
 ```
+
+## ✉ Serviço de email do projeto 
+ <p align="center"> O Projeto está dividido em duas partes de comunicação, na primeira você insere o seu email, que irá passar por uma verificação e então, se ele for validado, irá receber um email neste. Veja exemplo na imagem</p>
+
 
 ## 📫 Contribuindo para o projeto
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->

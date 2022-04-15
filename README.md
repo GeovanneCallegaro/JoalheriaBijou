@@ -68,7 +68,11 @@ Password: callegaro2018
 ```
 
 ## ✉ Serviço de email do projeto 
- <p align="center"> O Projeto está dividido em duas partes de comunicação, na primeira você insere o seu email, que irá passar por uma verificação e então, se ele for validado, irá receber um email neste. Veja exemplo na imagem</p>
+ <p align="center"> O Projeto está dividido em duas partes de comunicação, na primeira você insere o seu email, que irá passar por uma verificação e então, se ele for validado, irá receber um email neste. Veja exemplo na imagem abaixo:</p>
+ 
+ <img src="footerinformation.png" alt="Imagem do projeto 2"> </img>
+ 
+ Para enviar uma mensagem para empresa, você deve ir na seguinte página e escrever sua mensagem. Após toda verificação ser feita, o emial será enviado. Veja exemplo na imagem abaixo:
 
 
 ## 📫 Contribuindo para o projeto

@@ -5,12 +5,15 @@ import { toogleProduct } from '../../../store/Products/Products.actions'
 import { selectFiveProducts, selectFourProducts } from '../../../store/Products/Products.selectors'
 import './styles.css'
 
-export const Collection = () => {
+export const Collection = (props: any) => {
+    const {handleCart} = props
+
     const productsFour = useSelector(selectFourProducts)
     const allProducts = useSelector(selectFiveProducts)
     const dispatch = useDispatch()
 
     const handleToggle = (id: number) => {
+        handleCart()
         dispatch(toogleProduct(id))
     }
 

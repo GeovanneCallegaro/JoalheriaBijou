@@ -4,11 +4,14 @@ import { selectFourProducts } from '../../../../store/Products/Products.selector
 import './styles.css'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 
-export const Products = () => {
+export const Products = (props: any) => {
+    const {handleCart} = props
+
     const dispatch = useDispatch()
     const products = useSelector(selectFourProducts)
 
     const handleToggle = (id: number) => {
+        handleCart()
         dispatch(toogleProduct(id))
     }
 

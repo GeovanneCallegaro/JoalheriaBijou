@@ -71,10 +71,10 @@ function App() {
           <Shop />
         </Route>
         <Route path="/colecao">
-          <Collection />
+          <Collection handleCart={handleCart}/>
         </Route>
         <Route path="/">
-          <Initial />
+          <Initial handleCart={handleCart}/>
         </Route>
       </Switch>
       <FooterInformation 

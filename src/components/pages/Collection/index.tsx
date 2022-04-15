@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toogleProduct } from '../../../store/Products/Products.actions'
 import { selectFiveProducts, selectFourProducts } from '../../../store/Products/Products.selectors'
 import './styles.css'
+import { Link } from 'react-router-dom'
 
 export const Collection = (props: any) => {
     const {handleCart} = props
@@ -58,14 +59,16 @@ export const Collection = (props: any) => {
                             <div className='visualization collection' data-image={product.id}>
                                 <p>Visualização rápida</p>
                             </div>
-                            <img 
-                                src={product.src}
-                                alt={product.id}
-                                onMouseEnter={(event) => showVisualization(event.target)}
-                                onMouseLeave={removeVisualization}
-                                className="imagem"
-                                data-image={product.id}
-                            />
+                            <Link to={`/product/${product.id}`}>
+                                <img 
+                                    src={product.src}
+                                    alt={product.id}
+                                    onMouseEnter={(event) => showVisualization(event.target)}
+                                    onMouseLeave={removeVisualization}
+                                    className="imagem"
+                                    data-image={product.id}
+                                />
+                            </Link>
                             <div className='textImageContainerCollection'>
                                 <div>
                                     <h3>{product.name}</h3>
@@ -85,14 +88,16 @@ export const Collection = (props: any) => {
                         <div className='visualization collection' data-image={product.id}>
                             <p>Visualização rápida</p>
                         </div>
-                        <img 
-                            src={product.src}
-                            alt={product.id}
-                            onMouseEnter={(event) => showVisualization(event.target)}
-                            onMouseLeave={removeVisualization}
-                            className="imagem"
-                            data-image={product.id}
-                        />
+                        <Link to={`/product/${product.id}`}>
+                            <img 
+                                src={product.src}
+                                alt={product.id}
+                                onMouseEnter={(event) => showVisualization(event.target)}
+                                onMouseLeave={removeVisualization}
+                                className="imagem"
+                                data-image={product.id}
+                            />
+                        </Link>
                         <div className='textImageContainerCollection'>
                             <div>
                                 <h3>{product.name}</h3>

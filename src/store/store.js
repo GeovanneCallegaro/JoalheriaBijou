@@ -10,7 +10,7 @@ const rootReducer = combineReducers({
 })
 
 const persistedReducer = persistReducer({
-    key: 'productsNewsReducers',
+    key: 'productsNewID',
     storage, 
 }, rootReducer)
 

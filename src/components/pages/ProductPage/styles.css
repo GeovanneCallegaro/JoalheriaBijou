@@ -1,0 +1,257 @@
+.contentProduct {
+    height: 100vh;
+}
+
+.loader {
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+}
+
+.inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;  
+}
+
+.inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid var(--primary-color);
+}
+
+.inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid var(--primary-color);
+}
+
+@keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+/*PRODUCT PAGE*/
+.contentProductPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.imageSpotlight img {
+    width: 450px;
+    height: 450px;
+    cursor: zoom-in;
+    border: 1px solid black;
+}
+
+.totalImagesProduct {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.totalImagesProduct img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.aboutProductText {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: var(--second-font);
+    max-width: 500px;
+}
+
+.buyProductSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+
+.infoBuyProduct h1 {
+    font-family: var(--second-font);
+    font-size: 1.8rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.4rem;
+    font-weight: 400;
+
+    margin-bottom: 20px;
+}
+
+.infoBuyProduct p {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.buttonsProductBuy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttonAddCartSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonAddCartSection button {
+    border: none;
+    background: none;
+
+    background-color: var(--primary-color);
+    padding: 10px;
+    width: 300px;
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+    font-family: (--primary-font);
+}
+
+.buttonAddCartSection .buttonHeart {
+    border: 1px solid #000;
+    margin-left: 10px;
+    padding: 10px;
+    width: 35px;
+    font-size: 1.6rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.buttonBuyProduct {
+    width: 345px;
+    background: none;
+    border: none;
+    margin-top: 15px;
+    padding: 10px;
+    color: #fff;
+
+    background-color: #000;
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+/*MEDIA QUERIES */
+@media (max-width: 920px) {
+    .imageSpotlight {
+        margin-right: 15px;
+    }
+
+    .imageSpotlight img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .aboutProductText {
+        width: 350px;
+    }
+
+    .buyProductSection {
+        margin-top: -120px;
+    }
+}
+
+@media (max-width: 820px) {
+    .buttonAddCartSection .buttonHeart {
+        display: none;
+    }
+
+    .buttonAddCartSection button {
+        width: 250px;
+    }
+
+    .buttonBuyProduct {
+        width: 250px;
+    }
+}
+
+@media (max-width: 720px) {
+    .imageSpotlight img {
+        width: 290px;
+        height: 290px;
+    }
+
+    .buyProductSection {
+        margin-top: -160px;
+    }
+}
+
+@media (max-width: 620px) {
+    .contentProductPage {
+        flex-direction: column;
+    }
+
+    .aboutProductText {
+        display: none;
+    }
+
+    .buyProductSection {
+        margin-top: 10px;
+        justify-content: center;
+        height: 200px;
+    }
+
+    .infoBuyProduct {
+        margin-bottom: 20px;
+    }
+}

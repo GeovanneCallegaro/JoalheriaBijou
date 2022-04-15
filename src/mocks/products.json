@@ -5,7 +5,10 @@
             "type": "pulseira",
             "name": "Pulseira",
             "price": "450.00", 
-            "src": "https://static.wixstatic.com/media/157553_5c7bfd55032b47afbf0d5d6d21856b72.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_5c7bfd55032b47afbf0d5d6d21856b72.webp",
+            "src": [
+                "https://static.wixstatic.com/media/157553_5c7bfd55032b47afbf0d5d6d21856b72.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_5c7bfd55032b47afbf0d5d6d21856b72.webp", 
+                "https://static.wixstatic.com/media/157553_97edb217e6fa4968a02874f7458c40da.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_97edb217e6fa4968a02874f7458c40da.webp"
+            ],
             "selected": false
         }, 
         {
@@ -13,7 +16,10 @@
             "type": "cordão",
             "name": "Cordão",
             "price": "300.00", 
-            "src": "https://static.wixstatic.com/media/157553_477528c34660447a8a0afdbdf1a0fe05.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_477528c34660447a8a0afdbdf1a0fe05.webp",
+            "src": [
+                "https://static.wixstatic.com/media/157553_477528c34660447a8a0afdbdf1a0fe05.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_477528c34660447a8a0afdbdf1a0fe05.webp", 
+                "https://static.wixstatic.com/media/157553_1244b96056e84b759931705533c8390a.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_1244b96056e84b759931705533c8390a.webp"
+            ],
             "selected": false
         }, 
         {
@@ -21,7 +27,10 @@
             "type": "brinco",
             "name": "Brinco",
             "price": "150.00", 
-            "src": "https://static.wixstatic.com/media/157553_693426837c2f455693946bd5ff85e975.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_693426837c2f455693946bd5ff85e975.webp",
+            "src": [
+                "https://static.wixstatic.com/media/157553_693426837c2f455693946bd5ff85e975.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_693426837c2f455693946bd5ff85e975.webp", 
+                "https://static.wixstatic.com/media/157553_6e9733f69b3e4a47b7f7b8e51b744d13.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_6e9733f69b3e4a47b7f7b8e51b744d13.webp"
+            ],
             "selected": false
         }, 
         {
@@ -29,7 +38,10 @@
             "type": "cordão",
             "name": "Cordão",
             "price": "2000.00", 
-            "src": "https://static.wixstatic.com/media/157553_abfd11f66c2a446595e5c09ce463b4b7.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_abfd11f66c2a446595e5c09ce463b4b7.webp",
+            "src": [
+                "https://static.wixstatic.com/media/157553_abfd11f66c2a446595e5c09ce463b4b7.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_abfd11f66c2a446595e5c09ce463b4b7.webp", 
+                "https://static.wixstatic.com/media/157553_981b23afab4a4ae89a3900753b98e378.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_981b23afab4a4ae89a3900753b98e378.webp"
+            ],
             "selected": false
         }, 
         {
@@ -37,7 +49,10 @@
             "type": "brinco",
             "name": "Brinco",
             "price": "129.00", 
-            "src": "https://static.wixstatic.com/media/157553_1ce990329b054998baf81e8ab619a19c.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_1ce990329b054998baf81e8ab619a19c.webp",
+            "src": [
+                "https://static.wixstatic.com/media/157553_1ce990329b054998baf81e8ab619a19c.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_1ce990329b054998baf81e8ab619a19c.webp",
+                "https://static.wixstatic.com/media/157553_9bd1176d767b4d159892d0fe8353e855.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_9bd1176d767b4d159892d0fe8353e855.webp"
+            ],
             "selected": false
         }, 
         {
@@ -45,7 +60,10 @@
             "type": "cordão",
             "name": "Cordão",
             "price": "350.00", 
-            "src": "https://static.wixstatic.com/media/157553_5f034647787d49fabb405a91c066a160.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_5f034647787d49fabb405a91c066a160.webp",
+            "src": [
+                "https://static.wixstatic.com/media/157553_5f034647787d49fabb405a91c066a160.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_5f034647787d49fabb405a91c066a160.webp", 
+                "https://static.wixstatic.com/media/157553_5a6486d84eb74acc9a015897e9277a89.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_5a6486d84eb74acc9a015897e9277a89.webp"
+            ],
             "selected": false
         }, 
         {
@@ -53,7 +71,10 @@
             "type": "pulseira",
             "name": "pulseira",
             "price": "899.00", 
-            "src": "https://static.wixstatic.com/media/157553_00210e4f8a634d42b76649e84ff57028.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_00210e4f8a634d42b76649e84ff57028.webp",
+            "src": [
+                "https://static.wixstatic.com/media/157553_00210e4f8a634d42b76649e84ff57028.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_00210e4f8a634d42b76649e84ff57028.webp",
+                "https://static.wixstatic.com/media/157553_e1822d6ccef54c91a6e01f9220c0b5a1.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_e1822d6ccef54c91a6e01f9220c0b5a1.webp"
+            ],
             "selected": false
         }, 
         {
@@ -61,7 +82,10 @@
             "type": "cordão",
             "name": "Cordão",
             "price": "680.00", 
-            "src": "https://static.wixstatic.com/media/157553_b5e8a6f29be84fe2bebb54d0e2b1ca94.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_b5e8a6f29be84fe2bebb54d0e2b1ca94.webp",
+            "src": [
+                "https://static.wixstatic.com/media/157553_b5e8a6f29be84fe2bebb54d0e2b1ca94.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_b5e8a6f29be84fe2bebb54d0e2b1ca94.webp", 
+                "https://static.wixstatic.com/media/157553_c026677d330b4b809c04d07d1d7abee6.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_c026677d330b4b809c04d07d1d7abee6.webp"
+            ],
             "selected": false
         }
     ]

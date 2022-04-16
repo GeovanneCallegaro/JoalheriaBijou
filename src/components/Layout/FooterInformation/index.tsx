@@ -3,7 +3,7 @@ import './styles.css'
 import {BsShieldShaded} from 'react-icons/bs'
 
 import emailjs from '@emailjs/browser'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 /* typescript interface for props */
 interface Props {
@@ -12,6 +12,7 @@ interface Props {
 
 export const FooterInformation = ({...navText}: Props) => {
     const [value, setValue] = useState('')
+    const refSucess = useRef<HTMLParagraphElement>(null)
 
     /* anonymous function to map props to a constant */
     const optionsUl = navText.navText.map((item: any) => {
@@ -52,13 +53,20 @@ export const FooterInformation = ({...navText}: Props) => {
     }
 
     const sendEmail = () => {
+
         emailjs.init('cxrDa6JnC1GJIdApn')
 
         emailjs.send('service_raxyksg', 'template_inimkvb', {
             email_user: value,
             name_emprise: 'Geovanne Callegaro', 
         })
-            .then(response => console.log('Sucess' + response.status + response.text))
+            .then((response) => {
+                if(refSucess.current) {
+                    refSucess.current.style.display = 'block'
+                }
+
+                console.log(response)
+            })
             .catch(err => console.log('Error!' + err.status + err.text))
     }
 
@@ -93,6 +101,7 @@ export const FooterInformation = ({...navText}: Props) => {
                 <h3>Cadastre-se para receber nossas ofertas</h3>
                 <form onSubmit={(e) => checkEmail(e)}>
                     <label htmlFor="email">Insira seu email aqui *</label>
+                    <p className='successRegisterEmail' ref={refSucess}>Seu email foi cadastrado com sucesso!</p>
                     <input type="email" value={value} onChange={(e) => setValue(e.target.value)} className='inputEmailFooter'/>
                     <p className='paragraphErrorEmail'>Insira um email válido!</p>
                     <input type="submit" className='inputButtonSubmit' value='Inscrever-se'/>

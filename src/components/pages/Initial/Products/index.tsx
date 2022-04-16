@@ -48,11 +48,29 @@ export const Products = (props: any) => {
     }
 
     const moveImagesLeft = () => {
-        let valueScroll = scrollX + Math.round(window.innerWidth / 2);
-        if(valueScroll > 0) {
-            valueScroll = 0
+        if(window.innerWidth < 540) {
+            if(scrollX === 0) {
+                setScrollX(0)
+            } else {
+                setScrollX((s) => s + 250)
+            }
         }
-        setScrollX(valueScroll)
+
+        if(window.innerWidth > 540) {
+            if(scrollX  === 0) {
+                setScrollX(0)
+            } else {
+                setScrollX((s) => s + 250)
+            }
+        }
+
+        if(window.innerWidth > 790) {
+            if(scrollX  === 0) {
+                setScrollX(0)
+            } else {
+                setScrollX((s) => s + 0)
+            }
+        }
     }
 
     const moveImagesRight = () => {

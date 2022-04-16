@@ -22,6 +22,28 @@ export const FinalBuyPage = () => {
     
     }
 
+    const buySucess = () => {
+        const buySucessP = document.querySelector('.buySuccessP') as HTMLElement
+
+        if(cepInformation.bairro !== '') {
+            buySucessP.style.display = 'block'
+            
+
+            setTimeout(() => {
+                buySucessP.style.display = 'none'
+            }, 5000)
+        } else {
+            console.log('ta aqui')
+            buySucessP.innerText = 'Não foi possível finalizar a compra! Digite seu cep!'
+            buySucessP.style.color = 'crimson'
+            buySucessP.style.display = 'block'
+
+            setTimeout(() => {
+                buySucessP.style.display = 'none'
+            }, 5000)
+        }
+    }
+
     return (
         <div className='contentFinalBuy'>
             <div className='productsBuy'>
@@ -47,6 +69,7 @@ export const FinalBuyPage = () => {
                 </div>
             </div>
             <div className='informationBuy'>
+                <p className='buySuccessP'> Sua compra foi realizada com sucesso!</p>
                 <div className='localInformationsByCep'>
                     <h1>Bairro: {cepInformation.bairro}</h1>
                     <p>Rua: {cepInformation.logradouro}</p>
@@ -56,7 +79,7 @@ export const FinalBuyPage = () => {
                     <button onClick={(e) => handleCep(e)}>Pesquisar</button>
                 </div>
                 <div className='buyButtonFinal'>
-                    <button>Realizar compra</button>
+                    <button onClick={buySucess}>Realizar compra</button>
                 </div>
             </div>
         </div>

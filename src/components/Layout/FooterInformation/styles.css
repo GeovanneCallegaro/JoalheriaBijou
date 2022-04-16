@@ -134,6 +134,16 @@
     display: none;
 }
 
+.successRegisterEmail {
+    text-align: center;
+    color: rgb(38, 190, 38);
+    font-family: var(--second-font);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+
+    display: none;
+}
+
 /*MEDIA QUERIES*/
 @media (max-width: 760px) {
     .containerAllInformations {

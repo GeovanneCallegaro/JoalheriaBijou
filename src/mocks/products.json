@@ -2,8 +2,8 @@
     "products": [
         {
             "id": 1, 
-            "type": "pulseira",
-            "name": "Pulseira",
+            "type": "anel",
+            "name": "Anel",
             "price": "450.00", 
             "src": [
                 "https://static.wixstatic.com/media/157553_5c7bfd55032b47afbf0d5d6d21856b72.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_5c7bfd55032b47afbf0d5d6d21856b72.webp", 
@@ -69,7 +69,7 @@
         {
             "id": 7, 
             "type": "pulseira",
-            "name": "pulseira",
+            "name": "Pulseira",
             "price": "899.00", 
             "src": [
                 "https://static.wixstatic.com/media/157553_00210e4f8a634d42b76649e84ff57028.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/157553_00210e4f8a634d42b76649e84ff57028.webp",

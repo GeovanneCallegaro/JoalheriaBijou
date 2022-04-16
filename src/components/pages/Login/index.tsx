@@ -34,6 +34,7 @@ export const Login = () => {
                 inputEmail.style.border = '2px solid var(--primary-color)'
                 errorEmail.style.display = 'none'
             }, 5000)
+            return 
         }
 
         if(emailRegex.test(data.email) === false) {
@@ -44,6 +45,7 @@ export const Login = () => {
                 inputEmail.style.border = '2px solid var(--primary-color)'
                 errorEmailRegex.style.display = 'none'
             }, 5000)
+            return 
         }
 
         if(data.email !== users.users[0].email) {
@@ -54,6 +56,7 @@ export const Login = () => {
                 inputEmail.style.border = '2px solid var(--primary-color)'
                 errorEmailMatch.style.display = 'none'
             }, 5000)
+            return
         }
 
         if(!data.password) {
@@ -64,6 +67,7 @@ export const Login = () => {
                 inputPassword.style.border = '2px solid var(--primary-color)'
                 errorPassword.style.display = 'none'
             }, 5000)
+            return 
         }
 
         if(data.password !== users.users[0].password) {
@@ -74,6 +78,7 @@ export const Login = () => {
                 inputPassword.style.border = '2px solid var(--primary-color)'
                 errorPasswordMatch.style.display = 'none'
             }, 5000)
+            return
         }
     }
 
